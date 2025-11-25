@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ESPORT LIFE</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div class="login-container fade-in-up">
+        <div class="logo">
+            EL
+            <span>ESPORT LIFE</span>
+        </div>
+        <div class="welcome-text">
+            <h1>Que bom ter você aqui!</h1>
+            <p>Entre e aproveite o melhor da ESPORT LIFE</p>
+        </div>
+        <form class="login-form" action="/login" method="POST">
+            <div class="input-group">
+                <label for="login">Informe CPF, CNPJ ou E-mail</label>
+                <input type="text" id="login" name="login" placeholder="CPF,CNPJ ou e-mail" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Informe sua senha</label>
+                <div class="password-input">
+                    <input type="password" id="password" name="password" placeholder="Senha" required>
+                    <span class="toggle-password"><i class="far fa-eye"></i></span>
+                </div>
+            </div>
+            <div class="forgot-password">
+                <a href="/html/cadastro.html">Não tem conta? aperte aqui</a>
+            </div>
+            <button type="submit" class="login-button">Entrar</button>
+        </form>
+        <div class="create-account">
+            <a href="/html/cadastro.html" style="text-decoration: none;">
+                <button type="button" class="create-account-button">Criar conta ESPORT LIFE</button>
+            </a>
+        </div>
+        <div class="separator">
+            <hr>
+            <span>ou</span>
+            <hr>
+        </div>
+        <button class="google-login">
+            <i class="fab fa-google"></i>
+            Entrar com o Google
+        </button>
+        <div class="help-link">
+            <a href="suporte.html">Precisa de ajuda?</a>
+        </div>
+    </div>
+    <div class="security-info">
+        <i class="fas fa-lock"></i>
+        Ambiente 100% seguro
+    </div>
+</body>
+</html>

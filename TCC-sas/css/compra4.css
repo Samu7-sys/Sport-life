@@ -1,0 +1,382 @@
+/* ===================== Estilos Gerais ===================== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+header .logo span {
+    color: #000000;
+}
+
+header .search-bar button {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+
+.product-details {
+    padding: 30px 0;
+}
+
+.product-view {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-images {
+    width: 400px;
+    max-width: 100%;
+    height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    z-index: 10;
+    transition: background 0.3s;
+}
+
+.carousel-button:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+.carousel-button.prev { left: 10px; }
+.carousel-button.next { right: 10px; }
+
+
+.product-info {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: #ffc107;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.rating span {
+    color: #777;
+    margin-left: 5px;
+}
+
+.seller, .ref {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #777;
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+
+.payment-option {
+    font-size: 0.9em;
+    color: #007bff;
+}
+
+.installments {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+.size-selector p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.sizes {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.sizes button {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 1em;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sizes button.active,
+.sizes button:hover {
+    border-color: #007bff;
+    background-color: #e0f2ff;
+}
+
+
+.actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.buy-button, .add-to-cart {
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
+
+.add-to-cart {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.add-to-cart:hover {
+    background-color: #e0e0e0;
+    border-color: #bbb;
+}
+
+
+.shipping-calculator p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cep-input {
+    display: flex;
+    gap: 10px;
+}
+
+.cep-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.cep-input button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.cep-input button:hover {
+    background-color: #ccc;
+}
+
+
+.product-description {
+    background: #fff;
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+}
+
+.product-description h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.product-description p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background: #000;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer-column p, 
+.footer-column a, 
+.footer-column ul li {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.footer-column a:hover { color: #fff; }
+
+.subscribe-form {
+    display: flex;
+    border: 1px solid #444;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.subscribe-form input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    color: #fff;
+}
+
+.subscribe-form input::placeholder {
+    color: #777;
+}
+
+.subscribe-form button {
+    padding: 10px 15px;
+    border: none;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.app-badges img {
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+
+@media (max-width: 900px) {
+    .product-view {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-images {
+        width: 100%;
+        height: 350px;
+    }
+
+    .carousel img {
+        height: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .product-info {
+        padding: 15px;
+    }
+
+    .sizes button {
+        padding: 6px 10px;
+        font-size: 0.9em;
+    }
+
+    .buy-button, .add-to-cart {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+
+    .cep-input input {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .cep-input button {
+        padding: 8px 12px;
+    }
+}
